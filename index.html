@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Batuhan İnce - Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
     <style>
         .bg-background { background-color: white; }
         .text-foreground { color: black; }
@@ -48,6 +49,13 @@
         .button-primary:hover {
             background-color: #1d4ed8;
         }
+        .profile-image {
+            width: 400px;
+            /* height: 240px; */
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body class="min-h-screen bg-background text-foreground">
@@ -57,6 +65,9 @@
         <!-- About Section -->
         <section id="about" class="mb-24">
             <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="shrink-0">
+                    <img src="batu.png" alt="Batuhan İnce" class="profile-image">
+                </div>
                 <div>
                     <h2 class="text-4xl font-bold mb-4">Hello, I'm Batu</h2>
                     <p class="text-xl mb-6">
